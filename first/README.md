@@ -9,10 +9,7 @@
 - Docker는 Client, Server 구조로 통신은 default로 Unix socket(AKA Unix domain docker)을 사용한다. unix docker는 root user, sudo를 통해서만 unix socket을 접근할 수 있다. 즉, docker daemon은 root로 실행되어한다.
 - How Unix domain socket works
   - Process 간 IPC(inter-process communication) 통신을 위해 도입
-  - Loopback TCP/IP vs IPC
-    - https://lists.freebsd.org/pipermail/freebsd-performance/2005-February/001143.html
-    - Loopback TCP/IP 통신을 더 많은 layer를 거치기 때문에 느리다.
-![image](https://github.com/user-attachments/assets/f36ee4a5-3b4a-4606-a1e4-5baff28f82f6)
+  - Loopback TCP/IP vs IPC: Loopback TCP/IP 통신을 더 많은 layer를 거치기 때문에 느리다. -> [Detail](compare.protocol.md)
   - Unix domain docker 공유: 컨테이너가 host docker의 unix docket 공유해서 Docker 실행 (DooD)
 ```shell
 docker run --rm -it -v /run/docker.sock:/run/docker.sock -v /usr/bin/docker:/usr/bin/docker ubuntu:latest bash
