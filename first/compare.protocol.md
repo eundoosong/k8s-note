@@ -1,5 +1,7 @@
 ## IP 소켓 vs UNIX 도메인 소켓: 성능과 프로토콜 부하 비교
 
+![image](https://github.com/user-attachments/assets/f36ee4a5-3b4a-4606-a1e4-5baff28f82f6)
+
 서버 또는 데몬 프로그램을 작성할 때, IP 소켓과 UNIX 도메인 소켓 중 어떤 것을 사용할지 고민할 수 있습니다. 주요 선택 기준으로 성능과 프로토콜 부하가 있을 때, 
 두 소켓 유형의 차이점을 비교해 보겠습니다.
 
