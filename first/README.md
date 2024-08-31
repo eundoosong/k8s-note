@@ -31,7 +31,6 @@ $ exit
   docker logs <container id>
   docker exec <container id> <cmd>
   ```
-- Useful docker tool: [dive](https://github.com/wagoodman/dive) 
+- Useful docker tool: [dive](https://github.com/wagoodman/dive)
 
- 
   
