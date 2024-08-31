@@ -1,5 +1,4 @@
 
-
 ## What is Docker
 - Docker는 containerized process로 가상 환경을 제공해주는 오픈소스 플랫폼이다.
 - Docker는 pivot-root, namespace, cgroup을 사용해 유저 레벨의 격리 환경을 제공한다.
